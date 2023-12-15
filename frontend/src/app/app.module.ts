@@ -16,13 +16,8 @@ import { ContentComponent } from './component/content/content.component';
 import { initializeKeycloak } from './init/keycloak-init.factory';
 import { ConfigInitService } from './init/config-init.service';
 
-
-
 @NgModule({
-  declarations: [
-    AppComponent,
-    ContentComponent
-  ],
+  declarations: [AppComponent, ContentComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -34,7 +29,7 @@ import { ConfigInitService } from './init/config-init.service';
     HttpClientModule,
     KeycloakAngularModule,
     NgbModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [
     ConfigInitService,
@@ -43,8 +38,8 @@ import { ConfigInitService } from './init/config-init.service';
       useFactory: initializeKeycloak,
       multi: true,
       deps: [KeycloakService, ConfigInitService],
-    }
+    },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
