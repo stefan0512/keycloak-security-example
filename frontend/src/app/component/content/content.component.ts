@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatSnackBar } from '@angular/material/snack-bar';
-import { MatTable } from '@angular/material/table';
+import { MatLegacySnackBar as MatSnackBar } from '@angular/material/legacy-snack-bar';
+import { MatLegacyTable as MatTable } from '@angular/material/legacy-table';
 import { KeycloakService } from 'keycloak-angular';
 import { Movie, MovieBackendService } from 'src/app/services/movie-backend.service';
 
